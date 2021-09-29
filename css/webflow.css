@@ -1530,7 +1530,7 @@ figcaption {
     }
 }
 
-#w-node-dff26f68-5731-3efa-d3dd-8f65c72d8fa5-1558e841 {
+#showcase-image-1 {
     -ms-grid-column: 1;
     grid-column-start: 1;
     -ms-grid-column-span: 2;
@@ -1541,7 +1541,7 @@ figcaption {
     grid-row-end: 2;
 }
 
-#w-node-dff26f68-5731-3efa-d3dd-8f65c72d8fad-1558e841 {
+#showcase-image-2 {
     -ms-grid-column: 3;
     grid-column-start: 3;
     -ms-grid-column-span: 1;
@@ -1552,7 +1552,7 @@ figcaption {
     grid-row-end: 2;
 }
 
-#w-node-dff26f68-5731-3efa-d3dd-8f65c72d8fbb-1558e841 {
+#showcase-image-3 {
     -ms-grid-column: 1;
     grid-column-start: 1;
     -ms-grid-column-span: 3;
@@ -1563,7 +1563,7 @@ figcaption {
     grid-row-end: 3;
 }
 
-#w-node-dff26f68-5731-3efa-d3dd-8f65c72d8fc9-1558e841 {
+#projects-1 {
     -ms-grid-column: 1;
     grid-column-start: 1;
     -ms-grid-column-span: 1;
@@ -1574,7 +1574,7 @@ figcaption {
     grid-row-end: 2;
 }
 
-#w-node-dff26f68-5731-3efa-d3dd-8f65c72d8fd1-1558e841 {
+#projects-2 {
     -ms-grid-column: 2;
     grid-column-start: 2;
     -ms-grid-column-span: 1;
@@ -1585,7 +1585,7 @@ figcaption {
     grid-row-end: 2;
 }
 
-#w-node-dff26f68-5731-3efa-d3dd-8f65c72d8fd9-1558e841 {
+#projects-3 {
     -ms-grid-column: 3;
     grid-column-start: 3;
     -ms-grid-column-span: 1;
@@ -1596,7 +1596,7 @@ figcaption {
     grid-row-end: 2;
 }
 
-#w-node-dff26f68-5731-3efa-d3dd-8f65c72d8fe1-1558e841 {
+#projects-4 {
     -ms-grid-column: 4;
     grid-column-start: 4;
     -ms-grid-column-span: 1;
@@ -1608,7 +1608,7 @@ figcaption {
 }
 
 @media screen and (max-width: 991px) {
-    #w-node-dff26f68-5731-3efa-d3dd-8f65c72d8fd9-1558e841 {
+    #projects-5 {
         -ms-grid-column: 1;
         grid-column-start: 1;
         -ms-grid-row: 2;
@@ -1619,7 +1619,7 @@ figcaption {
         grid-row-end: 3;
     }
 
-    #w-node-dff26f68-5731-3efa-d3dd-8f65c72d8fe1-1558e841 {
+    #projects-4 {
         -ms-grid-column: 2;
         grid-column-start: 2;
         -ms-grid-row: 2;
@@ -1632,4 +1632,9 @@ figcaption {
 }
 .text-align-center {
     text-align: center;
+}
+.image-align-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
