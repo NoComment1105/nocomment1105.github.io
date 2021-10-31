@@ -1630,9 +1630,11 @@ figcaption {
         grid-row-end: 3;
     }
 }
+
 .text-align-center {
     text-align: center;
 }
+
 .image-align-center {
     display: flex;
     justify-content: center;

@@ -1,3 +1,5 @@
+// noinspection CommaExpressionJS,JSPotentiallyInvalidConstructorUsage,JSDuplicatedDeclaration,JSUnusedLocalSymbols,ES6ConvertVarToLetConst,JSUnresolvedVariable
+
 (function () {
     function aa(a, b, c) {
         return a.call.apply(a.bind, arguments)
@@ -19,7 +21,7 @@
     }
 
     function p(a, b, c) {
-        p = Function.prototype.bind && -1 != Function.prototype.bind.toString().indexOf("native code") ? aa : ba;
+        p = Function.prototype.bind && -1 !== Function.prototype.bind.toString().indexOf("native code") ? aa : ba;
         return p.apply(null, arguments)
     }
 
@@ -37,7 +39,7 @@
 
     function t(a, b, c, d) {
         b = a.c.createElement(b);
-        if (c) for (var e in c) c.hasOwnProperty(e) && ("style" == e ? b.style.cssText = c[e] : b.setAttribute(e, c[e]));
+        if (c) for (var e in c) c.hasOwnProperty(e) && ("style" === e ? b.style.cssText = c[e] : b.setAttribute(e, c[e]));
         d && b.appendChild(a.c.createTextNode(d));
         return b
     }
@@ -75,15 +77,15 @@
     }
 
     function y(a, b) {
-        for (var c = a.className.split(/\s+/), d = 0, e = c.length; d < e; d++) if (c[d] == b) return !0;
+        for (var c = a.className.split(/\s+/), d = 0, e = c.length; d < e; d++) if (c[d] === b) return !0;
         return !1
     }
 
     function z(a) {
         if ("string" === typeof a.f) return a.f;
         var b = a.m.location.protocol;
-        "about:" == b && (b = a.a.location.protocol);
-        return "https:" == b ? "https:" : "http:"
+        "about:" === b && (b = a.a.location.protocol);
+        return "https:" === b ? "https:" : "http:"
     }
 
     function ea(a) {
@@ -116,7 +118,7 @@
         if (e) {
             var f = t(a, "script", {src: b}), g = !1;
             f.onload = f.onreadystatechange = function () {
-                g || this.readyState && "loaded" != this.readyState && "complete" != this.readyState || (g = !0, c && c(null), f.onload = f.onreadystatechange = null, "HEAD" == f.parentNode.tagName && e.removeChild(f))
+                g || this.readyState && "loaded" !== this.readyState && "complete" !== this.readyState || (g = !0, c && c(null), f.onload = f.onreadystatechange = null, "HEAD" === f.parentNode.tagName && e.removeChild(f))
             };
             e.appendChild(f);
             setTimeout(function () {
@@ -125,7 +127,7 @@
             return f
         }
         return null
-    };
+    }
 
     function C() {
         this.a = 0;
@@ -146,8 +148,8 @@
     }
 
     function E(a) {
-        0 == a.a && a.c && (a.c(), a.c = null)
-    };
+        0 === a.a && a.c && (a.c(), a.c = null)
+    }
 
     function G(a) {
         this.a = a || "-"
@@ -175,7 +177,7 @@
         a = a.split(/,\s*/);
         for (var c = 0; c < a.length; c++) {
             var d = a[c].replace(/['"]/g, "");
-            -1 != d.indexOf(" ") || /^\d/.test(d) ? b.push("'" + d + "'") : b.push(d)
+            -1 !== d.indexOf(" ") || /^\d/.test(d) ? b.push("'" + d + "'") : b.push(d)
         }
         return b.join(",")
     }
@@ -194,7 +196,7 @@
         var b = 4, c = "n", d = null;
         a && ((d = a.match(/(normal|oblique|italic)/i)) && d[1] && (c = d[1].substr(0, 1).toLowerCase()), (d = a.match(/([1-9]00|normal|bold)/i)) && d[1] && (/bold/i.test(d[1]) ? b = 7 : /[1-9]00/.test(d[1]) && (b = parseInt(d[1].substr(0, 1), 10))));
         return c + b
-    };
+    }
 
     function ha(a, b) {
         this.c = a;
@@ -221,7 +223,7 @@
 
     function L(a, b, c) {
         if (a.j && a.h[b]) if (c) a.h[b](c.c, K(c)); else a.h[b]()
-    };
+    }
 
     function ja() {
         this.c = {}
@@ -234,7 +236,7 @@
             f && d.push(f(b[e], c))
         }
         return d
-    };
+    }
 
     function N(a, b) {
         this.c = a;
@@ -248,7 +250,7 @@
 
     function P(a) {
         return "display:block;position:absolute;top:-9999px;left:-9999px;font-size:300px;width:auto;height:auto;line-height:normal;margin:0;padding:0;font-variant:normal;white-space:nowrap;font-family:" + J(a.c) + ";" + ("font-style:" + I(a) + ";font-weight:" + (a.f + "00") + ";")
-    };
+    }
 
     function Q(a, b, c, d, e, f) {
         this.g = a;
@@ -317,7 +319,7 @@
 
     function U() {
         if (null === T) {
-            var a = /AppleWebKit\/([0-9]+)(?:\.([0-9]+))/.exec(window.navigator.userAgent);
+            var a = /AppleWebKit\/([0-9]+)\.([0-9]+)/.exec(window.navigator.userAgent);
             T = !!a && (536 > parseInt(a[1], 10) || 536 === parseInt(a[1], 10) && 11 >= parseInt(a[2], 10))
         }
         return T
@@ -355,7 +357,7 @@
             v(this.o.a);
             b(this.a)
         }, a), 0)
-    };
+    }
 
     function W(a, b, c) {
         this.c = a;
@@ -386,8 +388,8 @@
     };
 
     function oa(a) {
-        0 == --a.f && a.j && (a.o ? (a = a.a, a.g && w(a.f, [a.a.c("wf", "active")], [a.a.c("wf", "loading"), a.a.c("wf", "inactive")]), L(a, "active")) : M(a.a))
-    };
+        0 === --a.f && a.j && (a.o ? (a = a.a, a.g && w(a.f, [a.a.c("wf", "active")], [a.a.c("wf", "loading"), a.a.c("wf", "inactive")]), L(a, "active")) : M(a.a))
+    }
 
     function pa(a) {
         this.j = a;
@@ -404,7 +406,7 @@
     };
 
     function ra(a, b, c, d, e) {
-        var f = 0 == --a.h;
+        var f = 0 === --a.h;
         (a.f || a.g) && setTimeout(function () {
             var a = e || null, k = d || null || {};
             if (0 === c.length && f) M(b.a); else {
@@ -435,7 +437,7 @@
         for (c = d.length; b < c; b++) d[b].load(function (b, d, c) {
             ra(a, f, b, d, c)
         })
-    };
+    }
 
     function sa(a, b) {
         this.c = a;
@@ -454,7 +456,7 @@
                 var c = f["__mti_fntLst" + d](), e = [], h;
                 if (c) for (var m = 0; m < c.length; m++) {
                     var l = c[m].fontfamily;
-                    void 0 != c[m].fontStyle && void 0 != c[m].fontWeight ? (h = c[m].fontStyle + c[m].fontWeight, e.push(new H(l, h))) : e.push(new H(l))
+                    void 0 !== c[m].fontStyle && void 0 !== c[m].fontWeight ? (h = c[m].fontStyle + c[m].fontWeight, e.push(new H(l, h))) : e.push(new H(l))
                 }
                 a(e)
             } else setTimeout(function () {
@@ -503,22 +505,22 @@
     function xa(a, b) {
         for (var c = b.length, d = 0; d < c; d++) {
             var e = b[d].split(":");
-            3 == e.length && a.f.push(e.pop());
+            3 === e.length && a.f.push(e.pop());
             var f = "";
-            2 == e.length && "" != e[1] && (f = ":");
+            2 === e.length && "" !== e[1] && (f = ":");
             a.a.push(e.join(f))
         }
     }
 
     function ya(a) {
-        if (0 == a.a.length) throw Error("No fonts to load!");
-        if (-1 != a.c.indexOf("kit=")) return a.c;
+        if (0 === a.a.length) throw Error("No fonts to load!");
+        if (-1 !== a.c.indexOf("kit=")) return a.c;
         for (var b = a.a.length, c = [], d = 0; d < b; d++) c.push(a.a[d].replace(/ /g, "+"));
         b = a.c + "?family=" + c.join("%7C");
         0 < a.f.length && (b += "&subset=" + a.f.join(","));
         0 < a.g.length && (b += "&text=" + encodeURIComponent(a.g));
         return b
-    };
+    }
 
     function za(a) {
         this.f = a;
@@ -574,9 +576,9 @@
                         var n = Da.exec(l.toLowerCase());
                         if (null == n) l = ""; else {
                             l = n[2];
-                            l = null == l || "" == l ? "n" : Ca[l];
+                            l = null == l || "" === l ? "n" : Ca[l];
                             n = n[1];
-                            if (null == n || "" == n) n = "4"; else var r = Ba[n],
+                            if (null == n || "" === n) n = "4"; else var r = Ba[n],
                                 n = r ? r : isNaN(n) ? "4" : n.substr(0, 1);
                             l = [l, n].join("")
                         }
@@ -584,13 +586,13 @@
                     l && g.push(l)
                 }
                 0 < g.length && (f = g);
-                3 == d.length && (d = d[2], g = [], d = d ? d.split(",") :
+                3 === d.length && (d = d[2], g = [], d = d ? d.split(",") :
                     g, 0 < d.length && (d = Aa[d[0]]) && (a.c[e] = d))
             }
             a.c[e] || (d = Aa[e]) && (a.c[e] = d);
             for (d = 0; d < f.length; d += 1) a.a.push(new H(e, f[d]))
         }
-    };
+    }
 
     function Fa(a, b) {
         this.c = a;
