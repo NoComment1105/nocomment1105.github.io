@@ -126,7 +126,6 @@ blockquote {
 
 .paragraph-light {
     -webkit-align-self: center;
-    -ms-flex-item-align: center;
     -ms-grid-row-align: center;
     align-self: center;
     opacity: 0.6;
@@ -234,10 +233,6 @@ blockquote {
     background-color: transparent;
 }
 
-.logo-image {
-    display: block;
-}
-
 .navigation-wrap {
     display: -webkit-box;
     display: -webkit-flex;
@@ -335,86 +330,6 @@ blockquote {
     opacity: 0.7;
 }
 
-.text-field {
-    margin-bottom: 18px;
-    padding: 21px 20px;
-    border: 1px solid #e4e4e4;
-    border-radius: 0;
-    -webkit-transition: border-color 400ms ease;
-    transition: border-color 400ms ease;
-    font-size: 14px;
-    line-height: 26px;
-}
-
-.text-field:hover {
-    border-color: #e3e6eb;
-}
-
-.text-field:active {
-    border-color: #43464d;
-}
-
-.text-field:focus {
-    border-color: #43464d;
-}
-
-.text-field::-webkit-input-placeholder {
-    color: rgba(50, 52, 58, 0.4);
-}
-
-.text-field:-ms-input-placeholder {
-    color: rgba(50, 52, 58, 0.4);
-}
-
-.text-field::-ms-input-placeholder {
-    color: rgba(50, 52, 58, 0.4);
-}
-
-.text-field::placeholder {
-    color: rgba(50, 52, 58, 0.4);
-}
-
-.text-field.cc-textarea {
-    height: 200px;
-    padding-top: 12px;
-}
-
-.status-message {
-    padding: 9px 30px;
-    background-color: #202020;
-    color: #fff;
-    font-size: 14px;
-    line-height: 26px;
-    text-align: center;
-}
-
-.status-message.cc-success-message {
-    background-color: #12b878;
-}
-
-.status-message.cc-error-message {
-    background-color: #db4b68;
-}
-
-.contact {
-    padding-top: 80px;
-    padding-bottom: 90px;
-}
-
-.contact-headline {
-    width: 70%;
-    margin-bottom: 40px;
-}
-
-.contact-form-grid {
-    grid-column-gap: 30px;
-    grid-row-gap: 10px;
-}
-
-.contact-form-wrap {
-    width: 70%;
-}
-
 .footer-wrap {
     position: static;
     display: -webkit-box;
@@ -430,35 +345,6 @@ blockquote {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-}
-
-.webflow-link {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    opacity: 0.5;
-    -webkit-transition: opacity 400ms ease;
-    transition: opacity 400ms ease;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-.webflow-link:hover {
-    opacity: 1;
-}
-
-.webflow-link:active {
-    opacity: 0.8;
-}
-
-.webflow-logo-tiny {
-    margin-top: -2px;
-    margin-right: 8px;
 }
 
 .footer-links {
@@ -491,22 +377,6 @@ blockquote {
 
 .footer-item:active {
     opacity: 0.8;
-}
-
-.about-intro-grid {
-    margin-top: 100px;
-    margin-bottom: 140px;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    grid-column-gap: 80px;
-    grid-row-gap: 30px;
-    grid-template-areas: ". .";
-    -ms-grid-columns: 1fr 80px 2fr;
-    grid-template-columns: 1fr 2fr;
-    -ms-grid-rows: auto;
-    grid-template-rows: auto;
 }
 
 .utility-page-wrap {
@@ -559,41 +429,10 @@ blockquote {
     margin-bottom: 20px;
 }
 
-.cards-section {
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
-
-.centered-container {
-    -webkit-box-flex: 1;
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    text-align: center;
-}
-
-.cards-grid-container {
-    display: -ms-grid;
-    display: grid;
-    grid-auto-columns: 1fr;
-    grid-column-gap: 40px;
-    grid-row-gap: 40px;
-    -ms-grid-columns: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    -ms-grid-rows: auto;
-    grid-template-rows: auto;
-    text-align: left;
-}
-
 @media screen and (max-width: 991px) {
     .heading-jumbo {
         font-size: 56px;
         line-height: 70px;
-    }
-
-    .section.cc-contact {
-        padding-right: 0;
-        padding-left: 0;
     }
 
     .logo-link.w--current {
@@ -624,14 +463,6 @@ blockquote {
 
     .navigation {
         padding: 25px 30px;
-    }
-
-    .menu-button {
-        padding: 0;
-    }
-
-    .menu-button.w--open {
-        background-color: transparent;
     }
 
     .navigation-wrap {
@@ -666,134 +497,9 @@ blockquote {
     .carrer-headline-wrap {
         width: auto;
     }
-
-    .contact {
-        width: auto;
-        padding: 30px 50px 40px;
-    }
-
-    .contact-headline {
-        width: 100%;
-    }
-
-    .contact-form-wrap {
-        width: 100%;
-    }
-
-    .about-intro-grid {
-        grid-row-gap: 50px;
-        grid-template-areas: "."
-      ".";
-        -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-        -ms-grid-rows: auto 50px auto;
-        grid-template-rows: auto auto;
-        text-align: center;
-    }
-
-    .about-head-text-wrap {
-        width: 80%;
-        margin-right: auto;
-        margin-left: auto;
-    }
-
-    .skills-grid {
-        width: 80%;
-        margin-right: auto;
-        margin-left: auto;
-        grid-row-gap: 50px;
-        grid-template-areas: "."
-      ".";
-        -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-        -ms-grid-rows: auto 50px auto;
-        grid-template-rows: auto auto;
-        text-align: center;
-    }
-
-    .personal-features-grid {
-        width: 80%;
-        margin-right: auto;
-        margin-left: auto;
-        grid-template-areas: "."
-      "."
-      "."
-      ".";
-        -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-        -ms-grid-rows: auto auto auto auto;
-        grid-template-rows: auto auto auto auto;
-        text-align: center;
-    }
-
-    .social-media-heading {
-        width: 80%;
-        margin-right: auto;
-        margin-left: auto;
-        text-align: center;
-    }
-
-    .social-media-grid {
-        grid-template-areas: ". ."
-      ". ."
-      ". ."
-      ". .";
-        -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-        -ms-grid-rows: auto auto auto auto;
-        grid-template-rows: auto auto auto auto;
-    }
-
-    .project-overview-grid {
-        width: 70%;
-        margin-right: auto;
-        margin-left: auto;
-        grid-row-gap: 50px;
-        grid-template-areas: "."
-      "."
-      ".";
-        -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-        -ms-grid-rows: auto 50px auto 50px auto;
-        grid-template-rows: auto auto auto;
-        text-align: center;
-    }
-
-    .project-description-grid {
-        width: 80%;
-        margin-right: auto;
-        margin-left: auto;
-        grid-row-gap: 50px;
-        grid-template-areas: "."
-      ".";
-        -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-        -ms-grid-rows: auto 50px auto;
-        grid-template-rows: auto auto;
-        text-align: center;
-    }
-
-    .email-section {
-        margin-bottom: 160px;
-    }
-
-    .email-link {
-        font-size: 36px;
-        line-height: 54px;
-    }
-
-    .cards-grid-container {
-        grid-column-gap: 20px;
-    }
 }
 
 @media screen and (max-width: 767px) {
-    .rich-text {
-        width: 90%;
-        max-width: 470px;
-        text-align: left;
-    }
-
     .container {
         text-align: center;
     }
@@ -806,10 +512,6 @@ blockquote {
     .section {
         margin-right: 15px;
         margin-left: 15px;
-    }
-
-    .section.cc-contact {
-        padding: 15px;
     }
 
     .paragraph-bigger {
@@ -850,42 +552,6 @@ blockquote {
         line-height: 28px;
     }
 
-    .text-field.cc-textarea {
-        text-align: left;
-    }
-
-    .contact {
-        padding-right: 30px;
-        padding-left: 30px;
-    }
-
-    .contact-form-grid {
-        grid-column-gap: 30px;
-        grid-template-areas: "."
-      "."
-      ".";
-        -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-        -ms-grid-rows: auto auto auto;
-        grid-template-rows: auto auto auto;
-    }
-
-    .contact-form {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-        flex-direction: column;
-    }
-
-    .contact-form-wrap {
-        text-align: left;
-    }
-
     .footer-wrap {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -893,10 +559,6 @@ blockquote {
         -ms-flex-direction: column;
         flex-direction: column;
         text-align: center;
-    }
-
-    .webflow-link {
-        margin-bottom: 15px;
     }
 
     .footer-links {
@@ -913,81 +575,12 @@ blockquote {
         margin-left: 0;
     }
 
-    .about-head-text-wrap {
-        width: 70%;
-        max-width: 470px;
-    }
-
-    .skills-grid {
-        width: 70%;
-        max-width: 470px;
-        -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    }
-
-    .personal-features-grid {
-        width: 70%;
-        max-width: 470px;
-    }
-
-    .social-media-heading {
-        width: 70%;
-        max-width: 470px;
-    }
-
-    .social-media-grid {
-        grid-column-gap: 15px;
-        grid-row-gap: 15px;
-        -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .project-overview-grid {
-        width: 80%;
-        max-width: 470px;
-        margin-top: 90px;
-        margin-bottom: 95px;
-    }
-
-    .project-description-grid {
-        width: 70%;
-        max-width: 470px;
-        margin-top: 90px;
-        margin-bottom: 85px;
-    }
-
-    .email-section {
-        width: 80%;
-        max-width: 470px;
-        margin-top: 120px;
-        margin-bottom: 120px;
-    }
-
-    .email-link {
-        font-size: 36px;
-        line-height: 54px;
-    }
-
     .utility-page-wrap {
         padding: 15px;
     }
 
     ._404-wrap {
         padding: 30px;
-    }
-
-    .cards-section {
-        padding: 40px 20px;
-    }
-
-    .cards-grid-container {
-        max-width: none;
-        -ms-grid-row-align: stretch;
-        align-self: stretch;
-        -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-        -ms-grid-rows: auto auto auto;
-        grid-template-rows: auto auto auto;
     }
 
     .navbar-font {
@@ -998,11 +591,6 @@ blockquote {
 }
 
 @media screen and (max-width: 479px) {
-    .rich-text {
-        width: 100%;
-        max-width: none;
-    }
-
     .heading-jumbo {
         font-size: 36px;
         line-height: 48px;
@@ -1013,115 +601,12 @@ blockquote {
         padding-left: 20px;
     }
 
-    .menu-button {
-        -webkit-box-flex: 0;
-        -webkit-flex: 0 0 auto;
-        -ms-flex: 0 0 auto;
-        flex: 0 0 auto;
-    }
-
-    .menu-button.w--open {
-        -webkit-box-flex: 0;
-        -webkit-flex: 0 0 auto;
-        -ms-flex: 0 0 auto;
-        flex: 0 0 auto;
-    }
-
-    .contact {
-        padding-right: 15px;
-        padding-left: 15px;
-    }
-
-    .contact-form {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-        flex-direction: column;
-    }
-
-    .contact-form-wrap {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-        flex-direction: column;
-    }
-
     .footer-wrap {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -webkit-flex-direction: column;
         -ms-flex-direction: column;
         flex-direction: column;
-    }
-
-    .about-head-text-wrap {
-        width: 100%;
-        max-width: none;
-    }
-
-    .skills-grid {
-        width: 100%;
-        max-width: none;
-        -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    }
-
-    .personal-features-grid {
-        width: 100%;
-        max-width: none;
-    }
-
-    .social-media-heading {
-        width: 100%;
-        max-width: none;
-    }
-
-    .project-overview-grid {
-        width: 100%;
-        max-width: none;
-    }
-
-    .project-description-grid {
-        width: 100%;
-        max-width: none;
-    }
-
-    .email-section {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        width: 100%;
-        max-width: none;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-box-align: center;
-        -webkit-align-items: center;
-        -ms-flex-align: center;
-        align-items: center;
-    }
-
-    .email-link {
-        font-size: 30px;
-        line-height: 46px;
-    }
-
-    .centered-container {
-        text-align: left;
-    }
-
-    .cards-grid-container {
-        margin-right: 0;
-        margin-left: 0;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
     }
 }
 
