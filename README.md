@@ -1,5 +1,5 @@
 # nocomment1105.github.io
 
-My website hosted on github
+My website hosted on GitHub
 
-This is probably the most cluster fucked thing under the sun.
+This is probably the most broken thing under the sun.
