@@ -165,6 +165,18 @@ blockquote {
     opacity: 0.7;
 }
 
+.w-nav-link {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: none;
+    color: #a1a1a1;
+    padding: 20px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .navigation-item {
     padding-top: 9px;
     padding-bottom: 9px;
@@ -717,6 +729,16 @@ blockquote {
         grid-row-start: 2;
         -ms-grid-column-span: 1;
         grid-column-end: 3;
+        -ms-grid-row-span: 1;
+        grid-row-end: 3;
+    }
+    #projects-7 {
+        -ms-grid-column: 4;
+        grid-column-start: 4;
+        -ms-grid-row: 2;
+        grid-row-start: 2;
+        -ms-grid-column-span: 1;
+        grid-column-end: 4;
         -ms-grid-row-span: 1;
         grid-row-end: 3;
     }
